@@ -1,3 +1,9 @@
+# revision 18696
+# category Package
+# catalog-ctan /macros/latex/contrib/cmap
+# catalog-date 2008-07-07 08:02:44 +0200
+# catalog-license lppl
+# catalog-version 1.0h
 Name:		texlive-cmap
 Version:	1.0h
 Release:	1
@@ -54,6 +60,7 @@ pdfTeX.
 %{_texmfdistdir}/tex/latex/cmap/t2c.cmap
 %{_texmfdistdir}/tex/latex/cmap/t5.cmap
 %doc %{_texmfdistdir}/doc/latex/cmap/README
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -64,3 +71,5 @@ pdfTeX.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
