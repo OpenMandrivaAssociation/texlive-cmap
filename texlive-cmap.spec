@@ -6,7 +6,7 @@
 # catalog-version 1.0h
 Name:		texlive-cmap
 Version:	1.0h
-Release:	1
+Release:	2
 Summary:	Make PDF files searchable and copyable
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/cmap
