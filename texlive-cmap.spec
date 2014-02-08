@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-cmap
 Version:	20120807
-Release:	1
+Release:	2
 Summary:	TeXLive cmap package
 Group:		Publishing
 URL:		http://tug.org/texlive
