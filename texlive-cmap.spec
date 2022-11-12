@@ -1,19 +1,13 @@
-# revision 31477
-# category Package
-# catalog-ctan /macros/latex/contrib/cmap
-# catalog-date 2012-11-14 17:49:35 +0100
-# catalog-license lppl
-# catalog-version 1.0h
 Name:		texlive-cmap
 Epoch:		1
-Version:	1.0h
-Release:	10
+Version:	57640
+Release:	1
 Summary:	Make PDF files searchable and copyable
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/cmap
 License:	LPPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/cmap.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/cmap.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/cmap.r57640.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/cmap.doc.r57640.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -31,12 +25,12 @@ pdfTeX. This restriction may be resolved in a future version of
 pdfTeX.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -56,7 +50,7 @@ pdfTeX.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
