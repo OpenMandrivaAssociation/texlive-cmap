@@ -1,7 +1,7 @@
 Name:		texlive-cmap
 Epoch:		1
 Version:	57640
-Release:	1
+Release:	2
 Summary:	Make PDF files searchable and copyable
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/cmap
